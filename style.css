@@ -17,10 +17,24 @@ header {
 nav {
     grid-area: nav;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 2fr 7fr 3fr 6fr;
     background-color: skyblue;
+    row-gap: 50px;
 }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+        nav li, #logo {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            padding: 10px;
+        }
+
+        .icon {
+            width: min-content;
+        }
 
 main {
     grid-area: main;
@@ -29,7 +43,11 @@ main {
     background-color: gray;
 }
 
-.container {
+header, nav, main {
+    border: 1px solid black;
+}
+
+div#container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
@@ -41,7 +59,13 @@ main {
     border: 3px solid magenta
 }
 
+div#logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
-header, nav, main {
+div#logo, div#overview, div#config {
+    background-color: orangered;
     border: 1px solid black;
 }
