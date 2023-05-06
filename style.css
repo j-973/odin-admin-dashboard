@@ -3,24 +3,31 @@
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
-header {
-    grid-area: header;
+#container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: lightgray;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    border: 3px solid magenta
 }
 
 nav {
-    grid-area: nav;
     display: grid;
-    grid-template-rows: 2fr 7fr 3fr 6fr;
-    background-color: skyblue;
+    height: 100vh;
+    grid-template-rows: 1fr 4fr 2.5fr 5fr;
     row-gap: 50px;
+    background-color: skyblue;
 }
+    #logo {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
     nav ul {
         list-style: none;
         margin: 0;
@@ -31,41 +38,31 @@ nav {
             grid-template-columns: 1fr 4fr;
             padding: 10px;
         }
-
         .icon {
             width: min-content;
         }
+        div#logo, div#overview, div#config {
+            background-color: orangered;
+            border: 1px solid black;
+        }
+
+#main-content {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 4fr;
+    
+}
+
+header {
+    display: grid;
+    background-color: lightgray;
+}
 
 main {
-    grid-area: main;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     background-color: gray;
 }
 
 header, nav, main {
-    border: 1px solid black;
-}
-
-div#container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "nav header header header"
-        "nav main main main"
-        "nav main main main"
-        "nav main main main";
-    height: 100%;
-    border: 3px solid magenta
-}
-
-div#logo {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-div#logo, div#overview, div#config {
-    background-color: orangered;
     border: 1px solid black;
 }
