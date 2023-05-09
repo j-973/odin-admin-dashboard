@@ -11,13 +11,13 @@ html, body {
 #container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: 100vh;
+    height: auto;
     border: 3px solid magenta
 }
 
 nav {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template-rows: 1fr 4fr 2.5fr 5fr;
     row-gap: 50px;
     background-color: skyblue;
@@ -38,8 +38,8 @@ nav {
             grid-template-columns: 1fr 4fr;
             padding: 10px;
         }
-        .icon {
-            width: min-content;
+        .icon, #profile-text {
+            margin: 0px 20px;
         }
         div#logo, div#overview, div#config {
             background-color: orangered;
@@ -48,19 +48,57 @@ nav {
 
 #main-content {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template-rows: 1fr 4fr;
     
 }
 
 header {
     display: grid;
-    background-color: lightgray;
+    background-color: #FFFFFF;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 3fr;
 }
+
+h3, h6 {
+    margin: 5px 0px;
+}
+    #search-area, #profile-area, #title-area, #buttons-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        #search-bar {
+            width: 80%;
+            height: 40%;
+            background-color: #CCCCCC;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid #CCCCCC;
+        }
+    #profile-area {
+        justify-content: flex-end;
+    }
+        #profile-text {
+            font-weight: bold;
+        }
+    #buttons-area {
+        justify-content: space-evenly;
+    }
+    #buttons-area {
+        column-gap: 15px;
+    }
+        button {
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: none;
+        }
 
 main {
     display: grid;
-    background-color: gray;
+    background-color: #CCCCCC;
 }
 
 header, nav, main {
