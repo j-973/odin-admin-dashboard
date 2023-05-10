@@ -11,7 +11,7 @@ html, body {
 #container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    height: auto;
+    height: 100vh;
     border: 3px solid magenta
 }
 
@@ -60,16 +60,26 @@ header {
     grid-template-rows: 2fr 3fr;
 }
 
-h3, h6 {
+p {
+    margin: 0;
+}
+
+header, nav, main {
+    border: 1px solid black;
+}
+
+h3, h4, h6 {
     margin: 5px 0px;
 }
     #search-area, #profile-area, #title-area, #buttons-area {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 0px 40px;
+
     }
         #search-bar {
-            width: 80%;
+            width: 100%;
             height: 40%;
             background-color: #CCCCCC;
             padding: 10px;
@@ -78,12 +88,14 @@ h3, h6 {
         }
     #profile-area {
         justify-content: flex-end;
+        margin: 0px 40px;
     }
         #profile-text {
             font-weight: bold;
         }
     #buttons-area {
-        justify-content: space-evenly;
+        justify-content: flex-end;
+        padding: 10px;
     }
     #buttons-area {
         column-gap: 15px;
@@ -98,9 +110,32 @@ h3, h6 {
 
 main {
     display: grid;
+    grid-template-columns: 7fr 3fr;
     background-color: #CCCCCC;
 }
-
-header, nav, main {
-    border: 1px solid black;
-}
+    #projects-heading {
+       margin-top: 30px;
+       margin-left: 15px;
+    }
+    #projects-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .project {
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 7.5px;
+        border-left: 7.5px solid goldenrod;
+        box-shadow: 2px 3px 6px #888888;
+        padding: 20px 40px;
+        margin: 15px 15px;
+    }
+        .project > p {
+            color: dimgray;
+        }
+        .project-icons {
+            justify-self: flex-end;
+        }
