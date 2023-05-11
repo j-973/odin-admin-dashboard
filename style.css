@@ -38,7 +38,63 @@ nav {
             grid-template-columns: 1fr 4fr;
             padding: 10px;
         }
-        .icon, #profile-text {
+
+        .icon {
+            margin: 0px 20px;
+        }
+
+        .dash-icon {
+            width: 75%;
+            justify-content: center;
+            height: auto;
+        }
+
+        .nav-icon {
+            width: 40%;
+            justify-content: center;
+            height: auto;
+        }
+
+        .header-icon {
+            width: 4%;
+            margin: 0px 10px;
+            justify-content: center;
+        }
+
+        #header-pic {
+            width: 7%;
+            margin: 0px 20px;
+            justify-content: center;
+        }
+
+        #profile-pic {
+            width: 10%;
+            margin: 0px 10px;
+            justify-content: center;
+        }
+
+        #title-pic {
+            width: 10%;
+            margin: 0px 20px;
+        }
+
+        .project-icons {
+            display: flex;
+            justify-content: flex-end;
+        }
+            .project-icons > svg {
+                width: 6%;
+                margin: 20px 12.5px;
+            }
+
+        .trend-pic {
+            width: 15%;
+            height: 15%;
+            margin: 0px 20px;
+            justify-content: center;
+        }
+
+        #profile-text {
             margin: 0px 20px;
         }
         div#logo, div#overview, div#config {
@@ -164,9 +220,7 @@ main {
     }
 
     .trend-blurb {
-        display: grid;
-        grid-template-columns: auto 1fr;
+        display: flex;
         align-items: center;
-        column-gap: 5px;
     }
     
