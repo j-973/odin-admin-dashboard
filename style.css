@@ -68,7 +68,7 @@ header, nav, main {
     border: 1px solid black;
 }
 
-h3, h4, h6 {
+h3, h4, h5, h6 {
     margin: 5px 0px;
 }
     #search-area, #profile-area, #title-area, #buttons-area {
@@ -111,11 +111,13 @@ h3, h4, h6 {
 main {
     display: grid;
     grid-template-columns: 7fr 3fr;
+    align-content: start;
     background-color: #CCCCCC;
 }
-    #projects-heading {
-       margin-top: 30px;
-       margin-left: 15px;
+    #projects-heading, #news-area > div > h3 {
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: 15px;
     }
     #projects-area {
         display: grid;
@@ -126,16 +128,45 @@ main {
         justify-content: center;
         align-items: flex-start;
         background-color: #FFFFFF;
-        border: none;
         border-radius: 7.5px;
         border-left: 7.5px solid goldenrod;
         box-shadow: 2px 3px 6px #888888;
         padding: 20px 40px;
         margin: 15px 15px;
     }
-        .project > p {
+        .project > p, .trend-blurb > p {
             color: dimgray;
         }
         .project-icons {
             justify-self: flex-end;
         }
+
+    #news-area {
+        display: grid;
+    }
+
+    .announcements {
+        border: none;
+        font-size: 10pt;
+    }
+    .announcement:not(:last-child) {
+        padding: 10px 0px;
+        border-bottom: 1px solid dimgray;
+      }
+      
+    .trends {
+        border: none;
+        padding: 10px;
+    }
+
+    .project.trends, .project.trends > .icon {
+        justify-content: flex-start;
+    }
+
+    .trend-blurb {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 5px;
+    }
+    
