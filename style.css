@@ -6,6 +6,7 @@ html, body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container {
@@ -23,9 +24,9 @@ nav {
     color: white;
 }
     #logo {
-        display: grid;
         justify-content: center;
         align-items: center;
+        font-size: 28px;
     }
 
     nav ul {
@@ -34,6 +35,8 @@ nav {
         padding: 0;
     }
         nav li, #logo {
+            font-size: 24px;
+            font-weight: 700;
             display: grid;
             grid-template-columns: 1fr 4fr;
             padding: 10px;
