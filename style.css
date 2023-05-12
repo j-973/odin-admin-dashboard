@@ -12,7 +12,6 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100vh;
-    border: 3px solid magenta
 }
 
 nav {
@@ -20,7 +19,8 @@ nav {
     height: auto;
     grid-template-rows: 1fr 4fr 2.5fr 5fr;
     row-gap: 50px;
-    background-color: skyblue;
+    background-color: #0ea5e9;
+    color: white;
 }
     #logo {
         display: grid;
@@ -97,11 +97,6 @@ nav {
         #profile-text {
             margin: 0px 20px;
         }
-        div#logo, div#overview, div#config {
-            background-color: orangered;
-            border: 1px solid black;
-        }
-
 #main-content {
     display: grid;
     height: auto;
@@ -111,17 +106,15 @@ nav {
 
 header {
     display: grid;
-    background-color: #FFFFFF;
+    background-color: white;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 2fr 3fr;
+    box-shadow: 0 5px 10px -5px #d1d5db;
+    z-index: 1;
 }
 
 p {
     margin: 0;
-}
-
-header, nav, main {
-    border: 1px solid black;
 }
 
 h3, h4, h5, h6 {
@@ -137,10 +130,10 @@ h3, h4, h5, h6 {
         #search-bar {
             width: 100%;
             height: 40%;
-            background-color: #CCCCCC;
+            background-color: #e2e8f0;
             padding: 10px;
             border-radius: 15px;
-            border: 1px solid #CCCCCC;
+            border: 1px solid #e2e8f0;
         }
     #profile-area {
         justify-content: flex-end;
@@ -157,6 +150,8 @@ h3, h4, h5, h6 {
         column-gap: 15px;
     }
         button {
+            background-color: #0ea5e9;
+            color: white;
             font-size: 0.9rem;
             font-weight: bold;
             padding: 10px 30px;
@@ -168,7 +163,8 @@ main {
     display: grid;
     grid-template-columns: 7fr 3fr;
     align-content: start;
-    background-color: #CCCCCC;
+    background-color: #e2e8f0;
+    
 }
     #projects-heading, #news-area > div > h3 {
         font-weight: bold;
@@ -183,15 +179,15 @@ main {
         display: grid;
         justify-content: center;
         align-items: flex-start;
-        background-color: #FFFFFF;
+        background-color: white;
         border-radius: 7.5px;
-        border-left: 7.5px solid goldenrod;
-        box-shadow: 2px 3px 6px #888888;
+        border-left: 7.5px solid gold;
+        box-shadow: 2px 3px 4px #d1d5db;
         padding: 20px 40px;
         margin: 15px 15px;
     }
-        .project > p, .trend-blurb > p {
-            color: dimgray;
+        .project > p, .announcement > p, .trend-blurb-text > p:nth-child(2) {
+            color: #6b7280;
         }
         .project-icons {
             justify-self: flex-end;
@@ -207,7 +203,7 @@ main {
     }
     .announcement:not(:last-child) {
         padding: 10px 0px;
-        border-bottom: 1px solid dimgray;
+        border-bottom: 1px solid #d1d5db;
       }
       
     .trends {
