@@ -10,12 +10,6 @@ html, body {
     font-size: calc(12px + 0.25vw);
 }
 
-#container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    height: 100vh;
-}
-
 nav {
     display: grid;
     height: auto;
@@ -23,80 +17,6 @@ nav {
     row-gap: 50px;
     background-color: #0ea5e9;
     color: white;
-}
-
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-        nav li, #logo {
-            display: flex;
-            font-size: calc(20px + 0.25vw);
-            font-weight: 700;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        .icon {
-            margin: 0px 20px;
-        }
-        .dash-icon {
-            width: calc(40px + 0.25vw);
-          }
-          .nav-icon {
-            width: calc(20px + 0.25vw);
-          }
-        .dash-icon {
-            margin: 0px 10px;
-        }
-        .nav-icon {
-            margin: 0px 20px;
-        }
-        .dash-icon, .nav-icon, .header-icon, #header-pic, #profile-pic, #title-pic {
-            justify-content: center;
-            align-content: center;
-        }
-
-        .header-icon {
-            width: calc(20px + 0.25vw);  
-            margin: 0px 10px;
-        }
-
-        #profile-pic {
-            width: calc(50px + 0.25vw);
-            margin: 0px 10px;
-        }
-
-        #title-pic {
-            width: calc(75px + 0.25vw);
-            margin: 0px 20px;
-        }
-
-        .project-icons {
-            display: flex;
-            justify-content: flex-end;
-        }
-            .project-icons > svg {
-                width: calc(20px + 0.25vw);
-                margin: 20px 12.5px;
-            }
-
-        .trend-pic {
-            width: calc(50px + 0.25vw);
-            margin: 0px 20px;
-            justify-content: center;
-        }
-
-        #profile-text {
-            margin: 0px 20px;
-        }
-#main-content {
-    display: grid;
-    height: auto;
-    grid-template-rows: 1fr 4fr;
-    
 }
 
 header {
@@ -108,52 +28,6 @@ header {
     z-index: 1;
 }
 
-p {
-    margin: 0;
-}
-
-h3, h4, h5, h6 {
-    margin: 5px 0px;
-}
-    #search-area, #profile-area, #title-area, #buttons-area {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0px 40px;
-
-    }
-        #search-bar {
-            width: 50vw;
-            height: 3.75vh;
-            background-color: #e2e8f0;
-            padding: 10px;
-            border-radius: 15px;
-            border: 1px solid #e2e8f0;
-        }
-    #profile-area {
-        justify-content: center;
-        margin: 0px 40px;
-    }
-        #profile-text {
-            font-weight: bold;
-        }
-    #buttons-area {
-        justify-content: end;
-        padding: 10px;
-    }
-    #buttons-area {
-        column-gap: 15px;
-    }
-        button {
-            background-color: #0ea5e9;
-            color: white;
-            font-size: calc(10px + 0.25vw);
-            font-weight: bold;
-            padding: 10px 30px;
-            border-radius: 30px;
-            border: none;
-        }
-
 main {
     display: grid;
     grid-template-columns: 7fr 3fr;
@@ -161,62 +35,102 @@ main {
     background-color: #e2e8f0;
     
 }
-    #projects-heading, #news-area > div > h3 {
-        font-weight: bold;
-        margin-top: 30px;
-        margin-left: 15px;
+
+p {
+    margin: 0;
+}
+
+button {
+    background-color: #0ea5e9;
+    color: white;
+    font-size: calc(10px + 0.25vw);
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li, #logo {
+    display: flex;
+    font-size: calc(20px + 0.25vw);
+    font-weight: 700;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h3, h4, h5, h6 {
+    margin: 5px 0px;
+}
+
+.icon {
+    margin: 0px 20px;
+}
+
+    .dash-icon {
+    width: calc(40px + 0.25vw);
+    margin: 0px 10px;
     }
-    #projects-area {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    .nav-icon {
+    width: calc(20px + 0.25vw);
+    margin: 0px 20px;
     }
-    .project {
-        display: grid;
-        justify-content: center;
-        align-items: start;
-        background-color: white;
-        border-radius: 7.5px;
-        border-left: 7.5px solid gold;
-        box-shadow: 2px 3px 4px #d1d5db;
-        padding: 20px 40px;
-        margin: 15px 15px;
+
+    .header-icon {
+        width: calc(20px + 0.25vw);  
+        margin: 0px 10px;
     }
-        .project > p, .announcement > p, .trend-blurb-text > p:nth-child(2) {
-            color: #6b7280;
+
+    .project-icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+        .project-icons > svg {
+            width: calc(20px + 0.25vw);
+            margin: 20px 12.5px;
         }
-        .project-icons {
-            justify-self: end;
+
+.project {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+    border-radius: 7.5px;
+    border-left: 7.5px solid gold;
+    box-shadow: 2px 3px 4px #d1d5db;
+    padding: 20px 40px;
+    margin: 15px 15px;
+}
+
+.announcements {
+    border: none;
+    font-size: calc(10px + 0.25vw);
+}
+
+    .announcement > p {
+        padding-bottom: 10px;
         }
 
-    #news-area {
-        display: grid;
-    }
-
-    #announcement-area, #trending-area, .project.announcements, .project.trends {
-        height: 89%;
-    }
-
-    .announcements {
-        border: none;
-        font-size: calc(10px + 0.25vw);
-    }
     .announcement:not(:last-child) {
         padding: 10px 0px;
         border-bottom: 1px solid #d1d5db;
       }
 
-      .announcement > p {
-        padding-bottom: 10px;
-      }
-      
-    .trends {
-        border: none;
-        padding: 10px;
+.trends {
+    border: none;
+    padding: 10px;
     }
 
-    .project.trends, .project.trends > .icon {
-        justify-content: start;
-        align-items: center;
+    .trend-pic {
+        width: calc(50px + 0.25vw);
+        margin: 0px 20px;
+        justify-content: center;
     }
 
     .trend-blurb {
@@ -224,10 +138,97 @@ main {
         align-items: center;
     }
 
+        .trend-blurb-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
 
-    .trend-blurb-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
+            .project.trends, .project.trends > .icon {
+                justify-content: start;
+                align-items: center;
+            }
+
+                .project > p, .announcement > p, .trend-blurb-text > p:nth-child(2) {
+                    color: #6b7280;
+                }
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+#search-bar {
+    width: 50vw;
+    height: 3.75vh;
+    background-color: #e2e8f0;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+}
+
+#profile-area {
+    justify-content: center;
+    margin: 0px 40px;
+}
+
+    #profile-pic {
+        width: calc(50px + 0.25vw);
+        margin: 0px 10px;
     }
+    #profile-text {
+        font-weight: bold;
+        margin: 0px 20px;
+    }
+
+#title-pic {
+    width: calc(75px + 0.25vw);
+    margin: 0px 20px;
+}
+
+#buttons-area {
+    justify-content: end;
+    padding: 10px;
+    column-gap: 15px;
+}
+
+#main-content {
+    display: grid;
+    height: auto;
+    grid-template-rows: 1fr 4fr;
+    
+}
+
+#projects-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+#news-area {
+    display: grid;
+}
+
+        #projects-heading, #news-area > div > h3 {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+
+                #announcement-area, #trending-area, .project.announcements, .project.trends {
+                    height: 89%;
+                }
+
+                #search-area, #profile-area, #title-area, #buttons-area {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 0px 40px;
+
+                }
+
+                    .dash-icon, .nav-icon, .header-icon, #header-pic, #profile-pic, #title-pic {
+                        justify-content: center;
+                        align-content: center;
+                    }
