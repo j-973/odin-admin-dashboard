@@ -84,7 +84,7 @@ nav {
             }
 
         .trend-pic {
-            width: calc(40px + 0.25vw);
+            width: calc(50px + 0.25vw);
             margin: 0px 20px;
             justify-content: center;
         }
@@ -124,6 +124,7 @@ h3, h4, h5, h6 {
     }
         #search-bar {
             width: 50vw;
+            height: 3.75vh;
             background-color: #e2e8f0;
             padding: 10px;
             border-radius: 15px;
@@ -191,6 +192,10 @@ main {
         display: grid;
     }
 
+    #announcement-area, #trending-area, .project.announcements, .project.trends {
+        height: 89%;
+    }
+
     .announcements {
         border: none;
         font-size: calc(10px + 0.25vw);
@@ -198,6 +203,10 @@ main {
     .announcement:not(:last-child) {
         padding: 10px 0px;
         border-bottom: 1px solid #d1d5db;
+      }
+
+      .announcement > p {
+        padding-bottom: 10px;
       }
       
     .trends {
@@ -207,10 +216,18 @@ main {
 
     .project.trends, .project.trends > .icon {
         justify-content: start;
+        align-items: center;
     }
 
     .trend-blurb {
         display: flex;
         align-items: center;
     }
-    
+
+
+    .trend-blurb-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
