@@ -15,7 +15,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Almarai', sans-serif;
-    font-size: calc(12px + 0.25vw);
+    font-size: 1rem;
 }
 
 nav {
@@ -51,7 +51,8 @@ p {
 button {
     background-color: var(--tw-nav-sky-500);
     color: white;
-    font-size: calc(10px + 0.25vw);
+    font-size: 0.625rem; /*fallback size*/
+    font-size: clamp(0.625rem, calc(0.625rem + 0.25vw), 1.25rem);
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 30px;
@@ -65,7 +66,8 @@ nav ul {
 }
 nav li, #logo {
     display: flex;
-    font-size: calc(20px + 0.25vw);
+    font-size: 1.25rem; /*fallback size*/
+    font-size: clamp(1.25rem, calc(1.25rem + 0.25vw), 1.25rem);
     font-weight: 700;
     justify-content: flex-start;
     align-items: center;
@@ -118,7 +120,7 @@ h3, h4, h5, h6 {
 
 .announcements {
     border: none;
-    font-size: calc(10px + 0.25vw);
+    font-size: 0.9rem;
 }
 
     .announcement > p {
