@@ -8,9 +8,9 @@ My iteration of this project adheres to the guidelines set out by the maintainer
 **Why did I complete this project?:** To demonstrate my understanding of intermediate CSS techniques, such as the combined use of grid with flexbox, dynamic grids, custom CSS properties, and sizing with `calc()` and `clamp()`.
 
 ## Preview
-
+![image](https://github.com/j-973/odin-admin-dashboard/assets/47262509/38525df4-3773-4e47-9a88-9f61a052739c)
 ## Launching this Project
-- Click here to run it in your browser: 
+- Click here to run it in your browser: https://j-973.github.io/odin-admin-dashboard/
 ## What I Learned
 - The combination of `repeat()` with `auto-fill` and `minmax()` properties is useful for creating dynamic grids, that change cell size and number of columns depending on the browser's window size.
 - Creating custom CSS properties with `:root` and `var(--custom-property-name)` makes it easier to keep a consistent theme/color scheme.
